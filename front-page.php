@@ -68,7 +68,7 @@ get_header();
             
             <!--Section Nomination aux Oscars-->
             <?php
-            get_template_part('temple-parts/nomination'); //Appel du fichier nomination.php
+            get_template_part('template-parts/nomination'); //Appel du fichier nomination.php
             ?>
             
     </main><!-- #main -->
