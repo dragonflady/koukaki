@@ -1,0 +1,138 @@
+.oscar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 10em;
+}
+.oscar .nomination-text {
+  background-image: url("../images/Rectangle 23.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 80px;
+  width: 825px;
+  margin: 0;
+  display: inline-block;
+  color: #fff5e9;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.oscar img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: -50px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Fleurs dans la section "story" */
+.story h2::after {
+  animation: rotate 20s linear infinite;
+  height: 155px;
+}
+
+.story__article::after {
+  animation: rotate 20s linear infinite;
+}
+
+/* Fleurs dans la section "studio" */
+#studio h2::before {
+  content: url("../images/Random Flower.png");
+  position: absolute;
+  left: -1em;
+  top: 0em;
+  animation: rotate 20s linear infinite;
+}
+
+#studio h2::after {
+  content: url("../images/Flower.png");
+  position: absolute;
+  right: 1em;
+  animation: rotate 20s linear infinite;
+}
+
+/* Fleurs dans la section "oscars" */
+.oscar::before {
+  content: url("../images/Sunflower.png");
+  position: absolute;
+  left: 4em;
+  top: 0em;
+  animation: rotate 20s linear infinite;
+}
+
+.oscar::after {
+  content: url("../images/orchid.png");
+  position: absolute;
+  right: -4em;
+  bottom: 25em;
+  animation: rotate 20s linear infinite;
+}
+
+/* Animation for fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.fade-in-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal.revealScattered {
+  animation-delay: 0.5s;
+}
+
+/* Fleur dans le footer */
+.site-footer ul::after {
+  content: url("../images/Hibiscus.png");
+  position: absolute;
+  left: calc(50% - 323px);
+  bottom: -28.5em;
+  z-index: -1;
+  animation: rotate 20s linear infinite;
+  height: 646px;
+}
+
+.site-footer::before,
+.site-footer::after {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
