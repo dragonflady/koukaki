@@ -80,44 +80,43 @@
 }
 
 /* Animation for fade in */
-@keyframes fadeIn {
-  from {
+@keyframes fadeInStory {
+  0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translate3d(0, 20%, 0);
   }
-  to {
+  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 }
+.story {
+  animation: fadeInStory 1s;
+}
+
 .fade-in {
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-}
-
-.fade-in-scroll {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-in-scroll.visible {
   opacity: 1;
-  transform: translateY(0);
+  animation: fadeIn 1s ease forwards;
 }
 
 /* Reveal animation */
 .reveal {
   opacity: 0;
-  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(20px);
+  transition: all 1s ease;
 }
 
-.reveal.active {
+.active {
   opacity: 1;
-  transform: none;
+  transform: translateY(0px);
+  transition: all 1s ease;
 }
 
-.reveal.revealScattered {
+span {
+  display: inline-block;
+}
+
+.reveal .revealScattered {
   animation-delay: 0.5s;
 }
 
@@ -135,4 +134,61 @@
 .site-footer::before,
 .site-footer::after {
   display: none;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+.banner #header_video {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .banner__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  animation: float 5s ease-in-out infinite;
+}
+.banner #logo {
+  width: 45%;
+  position: sticky;
+  animation: fadeInUp 1s, floating-logo 6s ease-in-out 1s infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

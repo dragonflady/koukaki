@@ -51,45 +51,44 @@
 }
 
 /* Animation for fade in */
-@keyframes fadeIn {
-    from {
+@keyframes fadeInStory {
+    0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translate3d(0, 20%, 0);
     }
-    to {
+    100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate3d(0, 0, 0);
     }
+}
+
+.story {
+    animation: fadeInStory 1s;
 }
 
 .fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-}
-
-.fade-in-scroll {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-in-scroll.visible {
     opacity: 1;
-    transform: translateY(0);
+    animation: fadeIn 1s ease forwards;
 }
 
 /* Reveal animation */
 .reveal {
     opacity: 0;
-    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
-.reveal.active {
+.active {
     opacity: 1;
-    transform: none;
+    transform: translateY(0px);
+    transition: all 1s ease;
 }
 
-.reveal.revealScattered {
+span {
+    display: inline-block;
+}
+
+.reveal .revealScattered {
     animation-delay: 0.5s;
 }
 

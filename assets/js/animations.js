@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // IntersectionObserver pour les animations de titres
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -11,4 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.reveal').forEach(title => {
         observer.observe(title);
     });
+
+    // Initialisation de skrollr
+    skrollr.init();
+
 });

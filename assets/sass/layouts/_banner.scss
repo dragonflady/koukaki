@@ -1,0 +1,44 @@
+// assets/sass/layouts/_banner.scss
+
+.banner {
+    position: relative;
+    overflow: hidden;
+
+    #header_video {
+        position: absolute;
+        object-fit: cover;
+    }
+
+    .banner__container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        animation: float 5s ease-in-out infinite;
+    }
+
+    #logo {
+        width: 45%;
+        position: sticky;
+        animation: fadeInUp 1s, floating-logo 6s ease-in-out 1s infinite;
+    }
+}    
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
