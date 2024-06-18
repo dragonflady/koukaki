@@ -1,0 +1,27 @@
+// STORY
+
+.story {
+    animation: fadeInStory 1s;
+}
+
+#studio {
+    animation: fadeInUp 1s;
+}
+
+// Clouds parallax
+
+#place {
+    background-image: url('/assets/images/Studio_Koukaki-image_place.png');  /* Nouvelle image de fond */
+    .big_cloud {
+        filter: blur(10px);
+        position: absolute;
+        left: 1030px;
+        top: 1330px;
+    }
+    .little_cloud {
+        filter: blur(10px);
+        position: absolute;
+        left: 800px;
+        top:1580px;
+    }
+}

@@ -1,19 +1,19 @@
-// assets/sass/layouts/_banner.scss
+// HEADER
+
+// BANNER
 
 .banner {
     position: relative;
     overflow: hidden;
-
-    #header_video {
-        position: absolute;
-        object-fit: cover;
+    animation: fadeInDown 1s;
     }
 
-    .banner__container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        animation: float 5s ease-in-out infinite;
+    .banner {
+        &__container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
     }
 
     #logo {
@@ -21,24 +21,14 @@
         position: sticky;
         animation: fadeInUp 1s, floating-logo 6s ease-in-out 1s infinite;
     }
-}    
 
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+    // Video
+
+    #header_video {
+        position: absolute;
+        object-fit: cover;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+
+
+

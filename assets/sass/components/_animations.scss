@@ -1,4 +1,6 @@
-@keyframes rotate {
+// Rotations
+
+@keyframes flower-rotation {
     from {
         transform:rotate(0deg);
     }
@@ -7,50 +9,30 @@
     }
 }
 
-/* Fleurs dans la section "story" */
-.story h2::after {
-    animation: rotate 20s linear infinite;
-    height: 155px;
+// Fade ins
+
+@keyframes fadeInDown {
+   0% {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+   }
+   100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
-.story__article::after {
-    animation: rotate 20s linear infinite;
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 80%, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
-/* Fleurs dans la section "studio" */
-#studio h2::before {
-    content: url('../images/Random Flower.png');
-    position: absolute;
-    left: -1em;
-    top: 0em;
-    animation: rotate 20s linear infinite;
-}
-
-#studio h2::after {
-    content: url('../images/Flower.png');
-    position: absolute;
-    right: 1em;
-    animation: rotate 20s linear infinite;
-}
-
-/* Fleurs dans la section "oscars" */
-.oscar::before {
-    content: url('../images/Sunflower.png');
-    position: absolute;
-    left: 4em;
-    top: 0em;
-    animation: rotate 20s linear infinite;
-}
-
-.oscar::after {
-    content: url('../images/orchid.png');
-    position: absolute;
-    right: -4em;
-    bottom: 25em;
-    animation: rotate 20s linear infinite;
-}
-
-/* Animation for fade in */
 @keyframes fadeInStory {
     0% {
         opacity: 0;
@@ -62,33 +44,71 @@
     }
 }
 
-.story {
-    animation: fadeInStory 1s;
+ // Floating effects
+  
+ @keyframes floating-logo {
+    0%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -5%, 0);
+    }
+  }
+
+// FLOWERS 
+
+// Flowers rotation
+
+
+/* Fleurs dans la section story */
+.story h2::after, .story__article::after {
+    animation: flower-rotation 20s linear infinite;
 }
 
-.fade-in {
-    opacity: 1;
-    animation: fadeIn 1s ease forwards;
+/* Fleurs dans la section studio */
+#studio h2 {
+    &::before, &::after {
+    animation: flower-rotation 20s linear infinite;
+    }
 }
 
-/* Reveal animation */
+/* Fleurs dans la section oscars */
+.oscar {
+    &::before, &::after {
+        animation: flower-rotation 20s linear infinite;
+    }   
+}
+
+/* Fleur Colophon dans la section footer */
+.site-footer {
+    ul {
+        &::after {
+            animation: flower-rotation 20s linear infinite;
+        }
+    }
+}
+
+
+// FADE IN TITLES
+
 .reveal {
-    opacity: 0;
+    position: relative;
     transform: translateY(20px);
-    transition: all 1s ease;
+    opacity: 0;
+    transition: all 5s ease;
+}
+
+.revealScattered {
+    transform: translateY(60px);
 }
 
 .active {
-    opacity: 1;
     transform: translateY(0px);
+    opacity: 1;
     transition: all 1s ease;
 }
 
-span {
-    display: inline-block;
-}
 
-.reveal .revealScattered {
-    animation-delay: 0.5s;
-}
+
+
 

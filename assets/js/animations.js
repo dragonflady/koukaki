@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    // Ajout de la classe visible pour les sections lors du chargement de la page
+    document.querySelectorAll('.fade-in').forEach(element => {
+        element.classList.add('visible');
+    });
+
     // IntersectionObserver pour les animations de titres
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -14,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Initialisation de skrollr
-    skrollr.init();
-
+    if (typeof skrollr !== 'undefined') {
+        var s = skrollr.init();
+    }
 });

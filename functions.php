@@ -4,7 +4,8 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/assets/sass/style.css', array('parent-style'), filemtime(get_stylesheet_directory() . '/assets/sass/style.css'));
     wp_enqueue_script('skrollr', 'https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js', array(), null, true); // Ajout de skrollr.js
     wp_enqueue_script('animations', get_stylesheet_directory_uri() . '/assets/js/animations.js', array(), null, true);
-    
+    wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'); // Ajout de SwiperJS
+    wp_enqueue_script('swiper-init', get_stylesheet_directory_uri() . '/assets/js/swiper.js'); // Ajout du fichier swiper.js
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
