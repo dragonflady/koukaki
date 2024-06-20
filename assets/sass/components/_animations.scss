@@ -28,7 +28,7 @@
         transform: translate3d(0, 80%, 0);
     }
     100% {
-        opacity: 0;
+        opacity: 1;
         transform: translate3d(0, 0, 0);
     }
 }
@@ -91,11 +91,9 @@
 
 // FADE IN TITLES
 
-.reveal {
-    position: relative;
-    transform: translateY(20px);
+.reveal { 
+    transform: translateY(80%);
     opacity: 0;
-    transition: all 5s ease;
 }
 
 .revealScattered {
@@ -105,7 +103,7 @@
 .active {
     transform: translateY(0px);
     opacity: 1;
-    transition: all 1s ease;
+    animation: fadeinUp 3s ease-out forwards;
 }
 
 

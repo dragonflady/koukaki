@@ -11,7 +11,7 @@
 
 <article id="characters">
     <div class="main-character">
-      <h3><span class="reveal active">Les personnages</span></h3>
+      <h3><span class="reveal">Les personnages</span></h3>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <?php

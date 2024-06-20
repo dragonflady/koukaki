@@ -15,8 +15,8 @@ get_header();
         </section>
 
         <!--  Section Histoire -->
-        <section id="story" class="story">
-            <h2><span class="reveal active">L'histoire</span></h2>
+        <section id="story" class="story anim-section">
+            <h2><span class="reveal">L'histoire</span></h2>
             <article class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
             </article>
@@ -28,16 +28,16 @@ get_header();
             <!-- Section Lieu -->
             <article id="place">
                 <div>
-                    <h3><span class="reveal active">Le Lieu</span></h3>
-                    <img data-1400="left:1100px; opacity:0" data-top="left:800px; opacity:1" class="big_cloud skrollable skrollable-between" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/big_cloud.png" alt="Image d'un gros nuage" style="left: 809.029px; opacity: 0.969902;">
-                    <img data-1400="left:850px; opacity:0" data-top="left:550px; opacity:1" class="little_cloud skrollable skrollable-between" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/little_cloud.png" alt="Image d'un petit nuage" style="left: 559.029px; opacity: 0.969902;">
+                    <h3><span class="reveal">Le Lieu</span></h3>
+                    <img data-1400="left:1100px;" data-top="left:800px;" class="big_cloud skrollable skrollable-between" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/big_cloud.png" alt="Image d'un gros nuage" style="left: 809.029px; opacity: 0.969902;">
+                    <img data-1400="left:850px;" data-top="left:550px;" class="little_cloud skrollable skrollable-between" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/little_cloud.png" alt="Image d'un petit nuage" style="left: 559.029px; opacity: 0.969902;">
                     <p><?php echo get_theme_mod('place'); ?></p>
                 </div>
             </article>
         </section>
 
         <!-- Section Studio -->
-        <section id="studio">
+        <section id="studio" class="anim-section">
             <h2><span class="reveal">Studio</span> <span class="reveal revealScattered">Koukaki</span></h2>
             <div>
                 <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue des programmes originaux dans plus de 190 pays pour les enfants et les adultes. Nous avons deux sections en activité : le long métrage et le court métrage. Nous développons des films fantastiques, principalement autour de la culture de notre pays natal, le Japon.</p>

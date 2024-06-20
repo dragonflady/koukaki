@@ -10,17 +10,19 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                observer.unobserve(entry.target);
+                //observer.unobserve(entry.target);
+                return;
             }
+            entry.target.classList.remove('active');
         });
-    });
 
-    document.querySelectorAll('.reveal').forEach(title => {
-        observer.observe(title);
     });
+    const titles = document.querySelectorAll('.reveal');
+    titles.forEach((element) => observer.observe(element));
 
     // Initialisation de skrollr
     if (typeof skrollr !== 'undefined') {
         var s = skrollr.init();
     }
 });
+
