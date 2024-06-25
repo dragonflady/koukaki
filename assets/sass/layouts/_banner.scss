@@ -26,8 +26,10 @@
 
     #header_video {
         position: absolute;
-        object-fit: cover;
-}
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 
 
 

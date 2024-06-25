@@ -6,6 +6,7 @@ function theme_enqueue_styles() {
     wp_enqueue_script('animations', get_stylesheet_directory_uri() . '/assets/js/animations.js', array(), null, true);
     wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'); // Ajout de SwiperJS
     wp_enqueue_script('swiper-init', get_stylesheet_directory_uri() . '/assets/js/swiper.js'); // Ajout du fichier swiper.js
+    wp_enqueue_script('burger-menu', get_stylesheet_directory_uri() . '/assets/js/menu.js'); // Ajout du fichier burger-menu.js
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
