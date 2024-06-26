@@ -319,7 +319,7 @@
 
 .random_flower_burger {
   position: absolute;
-  top: 357px;
+  top: 200px;
   right: -45px;
   animation: flower-rotation 12s linear infinite;
 }
@@ -333,7 +333,7 @@
 
 .hibiscus_burger {
   position: absolute;
-  bottom: -240px;
-  right: -225px;
+  bottom: -320px;
+  right: -340px;
   animation: flower-rotation 12s linear infinite;
 }/*# sourceMappingURL=style.css.map */

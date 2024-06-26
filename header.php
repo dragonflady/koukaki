@@ -37,23 +37,24 @@
                     <a href="#story">Histoire</a></li>
                 <li class="menu-mobile">
                     <a href="#characters">Personnages</a></li>
-                <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+                <li class="site-title">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
                 <li class="menu-mobile">
                     <a href="#place">Lieu</a></li>
                 <li class="menu-mobile">
                     <a href="#studio">Studio Koukaki</a></li>
             </ul>
             <div id="menu_burger" class="nav_burger">
-                <a id="closeBtn" href="#" class="close"></a>
+                <a id="closeBtn" href="#" class="close">×</a>
                 <ul class="burger">
                     <!-- Logo -->
                      <img class="logo_burger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_burger.png" alt="Logo Fleurs d'oranger & Chats Errants">
                      <!-- Violet orchid -->
                      <img class="orchid_burger menu_animation"src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/orchid.png" alt="Image d'une orchidée violette">
                      <!-- Purple cat -->
-                     <img class="purple_cat_burger menu_animation" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/purple_cat" alt="Image d'un chat violet">
+                     <img class="purple_cat_burger menu_animation" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/purple_cat.png" alt="Image d'un chat violet">
                      <!-- Daisy flower -->
-                     <img class="daisy_burger menu_animations" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Sunflower.png" alt="Image d'une marguerite">
+                     <img class="daisy_burger menu_animations" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Sunflower_burger.png" alt="Image d'une marguerite">
                      <!-- Orange flower -->
                      <img class="flower_burger menu_animations" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Flower.png" alt="Image d'une fleur orange">
                      <!-- Grey cat -->
@@ -64,15 +65,22 @@
                      <img class="orange_cat_burger menu_animations" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/orange_cat.png" alt="Image d'un chat orange">
                      <!-- Hibiscus flower -->
                      <img class="hibiscus_burger menu_animations" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Hibiscus.png" alt="Image d'une fleur d'hibiscus">
-                     <!-- Logo Studio Koukaki -->
-                     <img class="logo_burger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/studio_koukaki.png" alt="Logo Studio Koukaki">
+                    
                      <li class="story_burger title_anim"><a class="lien_burger" href="#story">Histoire</a></li>
                      <li class="title_anim"><a class="lien_burger" href="#characters">Personnages</a></li>
                      <li class="lieu_burger title_anim"><a class="lien_burger" href="#place">Lieu</a></li>
                      <li class="studio_burger title_anim"><a class="lien_burger" href="#studio">Studio Koukaki</a></li>
+                     <!-- Logo Studio Koukaki -->
+                     <img class="logo_burger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/studio_koukaki.png" alt="Logo Studio Koukaki">
                 </ul>
             </div>
-            <a href="#" id="openBtn"></a>
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
 		</nav>
         <!-- #site-navigation -->
 	</header>
