@@ -223,6 +223,54 @@
 .nav_burger ul li {
   top: 5px;
 }
+.nav_burger ul .story_burger::before {
+  content: url("../images/purple_cat.png");
+  position: absolute;
+  left: -20em;
+  top: -3em;
+}
+.nav_burger ul .story_burger::after {
+  content: url("../images/Sunflower_burger.png");
+  position: absolute;
+  right: -30em;
+  bottom: 2em;
+}
+.nav_burger ul .personnages_burger::before {
+  content: url("../images/orchid.png");
+  position: absolute;
+  left: -46em;
+  bottom: 22em;
+}
+.nav_burger ul .personnages_burger::after {
+  content: url("../images/random_flower_burger.png");
+  position: absolute;
+  right: -46em;
+  bottom: -5em;
+}
+.nav_burger ul .lieu_burger::before {
+  content: url("../images/Flower.png");
+  position: absolute;
+  left: -30em;
+  bottom: 0em;
+}
+.nav_burger ul .lieu_burger::after {
+  content: url("../images/grey_cat.png");
+  position: absolute;
+  right: -30em;
+  bottom: -7em;
+}
+.nav_burger ul .studio_burger::before {
+  content: url("../images/orange_cat.png");
+  position: absolute;
+  left: -30em;
+  bottom: -10em;
+}
+.nav_burger ul .studio_burger::after {
+  content: url("../images/Hibiscus.png");
+  position: absolute;
+  right: -62em;
+  bottom: -45em;
+}
 .nav_burger .close {
   position: absolute;
   top: 35px;
@@ -282,58 +330,27 @@
   filter: drop-shadow(0px 0px 26.0937px rgba(255, 92, 0, 0.6));
 }
 
-.orchid_burger {
-  position: absolute;
-  left: -55px;
-  top: 120px;
-  animation: flower-rotation 12s linear infinite;
+.story_burger::before {
+  animation: floating-logo 6s ease-in-out 1s infinite;
+}
+.story_burger::after {
+  animation: flower-rotation 20s linear infinite;
 }
 
-.purple_cat_burger {
-  position: absolute;
-  left: 360px;
-  top: 180px;
-  animation: floating-cat 6s ease-in-out 0s infinite;
+.personnages_burger::before, .personnages_burger::after {
+  animation: flower-rotation 20s linear infinite;
 }
 
-.daisy_burger {
-  position: absolute;
-  top: 135px;
-  right: 300px;
-  animation: flower-rotation 12s linear infinite;
+.lieu_burger::before {
+  animation: flower-rotation 20s linear infinite;
+}
+.lieu_burger::after {
+  animation: floating-logo 6s ease-in-out 1s infinite;
 }
 
-.flower_burger {
-  position: absolute;
-  top: 420px;
-  left: 300px;
-  animation: flower-rotation 12s linear infinite;
+.studio_burger::before {
+  animation: floating-logo 6s ease-in-out 1s infinite;
 }
-
-.grey_cat_burger {
-  position: absolute;
-  top: 430px;
-  right: 390px;
-  animation: floating-cat 6s ease-in-out 0s infinite;
-}
-
-.random_flower_burger {
-  position: absolute;
-  top: 200px;
-  right: -45px;
-  animation: flower-rotation 12s linear infinite;
-}
-
-.orange_cat_burger {
-  position: absolute;
-  top: 620px;
-  left: 130px;
-  animation: floating-cat 6s ease-in-out 0s infinite;
-}
-
-.hibiscus_burger {
-  position: absolute;
-  bottom: -320px;
-  right: -340px;
-  animation: flower-rotation 12s linear infinite;
+.studio_burger::after {
+  animation: flower-rotation 20s linear infinite;
 }/*# sourceMappingURL=style.css.map */

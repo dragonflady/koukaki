@@ -7,7 +7,7 @@ $background-color_3: #FFD5A2;
 
 .nav_burger {
 	height: 100%;
-  max-width: 1440px;
+  	max-width: 1440px;
 	width: 100%;
 	position: fixed;
 	z-index: 1;
@@ -15,6 +15,7 @@ $background-color_3: #FFD5A2;
 	background-color: $background-color_3;
 	padding-top: 60px;
 	overflow: hidden;
+
 	a {
 		text-decoration: none;
 		font-size: 38px;
@@ -23,19 +24,79 @@ $background-color_3: #FFD5A2;
 		transition: 0.3s;
 		text-align: center;
 	}
+
 	ul {
 		a {
 			&:hover {
 				text-shadow: 0px 0px 14px #FF5C00;
 			}
 		}
+
 		list-style-type: none;
 		flex-direction: column;
 		background-color: $background-color_1;
+
 		li {
 			top: 5px;
 		}
+
+		.story_burger::before {
+			content: url('../images/purple_cat.png');
+			position: absolute;
+			left: -20em;
+			top: -3em;
+		}
+	
+		.story_burger::after {
+			content: url('../images/Sunflower_burger.png');
+			position: absolute;
+			right: -30em;
+			bottom: 2em;
+		}
+
+		.personnages_burger::before {
+			content: url('../images/orchid.png');
+			position: absolute;
+			left: -46em;
+			bottom: 22em;
+		}
+
+		.personnages_burger::after {
+			content: url('../images/random_flower_burger.png');
+			position: absolute;
+			right: -46em;
+			bottom: -5em;
+		}
+
+		.lieu_burger::before {
+			content: url('../images/Flower.png');
+			position: absolute;
+			left: -30em;
+			bottom: 0em;
+		}
+
+		.lieu_burger::after {
+			content: url('../images/grey_cat.png');
+			position: absolute;
+			right: -30em;
+			bottom: -7em;
+		}
+
+		.studio_burger::before {
+			content: url('../images/orange_cat.png');
+			position: absolute;
+			left: -30em;
+			bottom: -10em;
+		}
+
+		.studio_burger::after {
+			content: url('../images/Hibiscus.png');
+			position: absolute;
+			right: -62em;
+			bottom: -45em;
+		}
 	}
+
 	.close {
 		position: absolute;
 		top: 35px;
@@ -45,6 +106,7 @@ $background-color_3: #FFD5A2;
 		color: $color_1;
 	}
 }
+
 .nav_burger.active {
 	top: 0;
 	width: 100%;
@@ -53,6 +115,7 @@ $background-color_3: #FFD5A2;
 	animation: down 1s;
 	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 .burger-icon {
 	span {
 		display: block;
@@ -65,11 +128,13 @@ $background-color_3: #FFD5A2;
     }
 	}
 }
+
 #openBtn {
 	position: absolute;
 	top: 20px;
 	right: 20px;
 }
+
 .site-title {
 	z-index: 2;
 }
@@ -94,58 +159,35 @@ $background-color_3: #FFD5A2;
 	filter: drop-shadow(0px 0px 26.0937px rgba(255, 92, 0, 0.6));
 }
 
-.orchid_burger {
-	position: absolute;
-	left: -55px;
-	top: 120px;
-	animation : flower-rotation 12s linear infinite;
+.story_burger {
+	&::before {
+		animation: floating-logo 6s ease-in-out 1s infinite;
+	}
+	&::after {
+		animation: flower-rotation 20s linear infinite;
+	}
 }
 
-.purple_cat_burger {
-	position: absolute;
-	left: 360px;
-	top: 180px;
-	animation: floating-cat 6s ease-in-out 0s infinite;
+.personnages_burger {
+	&::before, &::after {
+		animation: flower-rotation 20s linear infinite;
+	}
 }
 
-.daisy_burger {
-	position: absolute;
-	top: 135px;
-	right: 300px;
-	animation : flower-rotation 12s linear infinite;
+.lieu_burger {
+	&::before {
+		animation: flower-rotation 20s linear infinite;
+	}
+	&::after {
+		animation: floating-logo 6s ease-in-out 1s infinite;
+	}
 }
 
-.flower_burger {
-  position: absolute;
-  top: 420px;
-  left: 300px;
-  animation : flower-rotation 12s linear infinite;
-}
-
-.grey_cat_burger {
-  position: absolute;
-  top: 430px;
-  right: 390px;
-  animation: floating-cat 6s ease-in-out 0s infinite;
-}
-
-.random_flower_burger {
-	position: absolute;
-	top: 200px;
-	right: -45px;
-	animation : flower-rotation 12s linear infinite;
-}
-
-.orange_cat_burger {
-	position: absolute;
-	top: 620px;
-	left: 130px;
-	animation: floating-cat 6s ease-in-out 0s infinite;
-}
-
-.hibiscus_burger {
-	position: absolute;
-	bottom: -320px;
-	right: -340px;
-	animation : flower-rotation 12s linear infinite;
+.studio_burger {
+	&::before {
+		animation: floating-logo 6s ease-in-out 1s infinite;
+	}
+	&::after {
+		animation: flower-rotation 20s linear infinite;
+	}
 }

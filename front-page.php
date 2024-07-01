@@ -7,7 +7,7 @@ get_header();
         <section class="banner">
             <video autoplay muted loop id="header_video">
                 <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/studio_koukaki.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas les vidéos HTML5.
+                <img src="../../assets/images/banner.png" alt="Votre navigateur ne supporte pas les vidéos HTML5.">
             </video>
             <div class="banner__container skrollable skrollable-between" data-0="transform: translateY(0px);" data-500="transform: translateY(250px);">
                 <img id="logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">
