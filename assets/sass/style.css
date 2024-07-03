@@ -239,7 +239,7 @@
   content: url("../images/orchid.png");
   position: absolute;
   left: -46em;
-  bottom: 22em;
+  bottom: 15em;
 }
 .nav_burger ul .personnages_burger::after {
   content: url("../images/random_flower_burger.png");
@@ -263,7 +263,7 @@
   content: url("../images/orange_cat.png");
   position: absolute;
   left: -30em;
-  bottom: -10em;
+  bottom: -4em;
 }
 .nav_burger ul .studio_burger::after {
   content: url("../images/Hibiscus.png");
@@ -326,7 +326,7 @@
 
 .logo_burger {
   position: relative;
-  top: 5px;
+  bottom: 90px;
   filter: drop-shadow(0px 0px 26.0937px rgba(255, 92, 0, 0.6));
 }
 

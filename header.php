@@ -37,6 +37,9 @@
             <div id="menu_burger" class="nav_burger">
                 <a id="closeBtn" href="#" class="close">×</a>
                 <ul class="burger">
+                    <li class="site-title">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                    </li>
                     <!-- Logo -->
                     <img class="logo_burger" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_burger.png" alt="Logo Fleurs d'oranger & Chats Errants">
                     <li class="story_burger title_anim">
@@ -52,10 +55,13 @@
                         <a class="lien_burger" href="#studio">Studio Koukaki</a>
                     </li>
                     <!-- Studio Koukaki -->
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/studio_koukaki.png" alt="Studio Koukaki">
+                     <li>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/studio_koukaki.png" alt="Studio Koukaki">
+                    </li>
                 </ul>
             </div>
         </nav>
         <!-- #site-navigation -->
 	</header>
     <!-- #masthead -->
+</div>
