@@ -23,6 +23,7 @@ $background-color_3: #FFD5A2;
 		display: block;
 		transition: 0.3s;
 		text-align: center;
+		margin-top: -30px;
 	}
 
 	ul {
@@ -44,65 +45,65 @@ $background-color_3: #FFD5A2;
 			content: url('../images/purple_cat.png');
 			position: absolute;
 			left: -20em;
-			top: -3em;
+			top: -6em;
 		}
 	
 		.story_burger::after {
-			content: url('../images/Sunflower_burger.png');
+			content: url('../images/Sunflower.png');
 			position: absolute;
-			right: -30em;
+			right: -25em;
 			bottom: 2em;
 		}
 
 		.personnages_burger::before {
 			content: url('../images/orchid.png');
 			position: absolute;
-			left: -46em;
-			bottom: 15em;
+			left: -40em;
+			bottom: 10em;
 		}
 
 		.personnages_burger::after {
 			content: url('../images/random_flower_burger.png');
 			position: absolute;
-			right: -46em;
-			bottom: -5em;
+			right: -38em;
+			bottom: 2em;
 		}
 
 		.lieu_burger::before {
 			content: url('../images/Flower.png');
 			position: absolute;
-			left: -30em;
-			bottom: 0em;
+			left: -28em;
+			bottom: 1em;
 		}
 
 		.lieu_burger::after {
 			content: url('../images/grey_cat.png');
 			position: absolute;
-			right: -30em;
-			bottom: -7em;
+			right: -28em;
+			bottom: -2em;
 		}
 
 		.studio_burger::before {
 			content: url('../images/orange_cat.png');
 			position: absolute;
-			left: -30em;
-			bottom: -4em;
+			left: -28em;
+			bottom: -7em;
 		}
 
 		.studio_burger::after {
 			content: url('../images/Hibiscus.png');
 			position: absolute;
-			right: -62em;
-			bottom: -45em;
+			right: -55em;
+			bottom: -38em;
 		}
 	}
 
 	.close {
 		position: absolute;
-		top: 35px;
+		top: 65px;
 		right: 20px;
 		line-height: 0;
-		font-size: 36px;
+		font-size: 40px;
 		color: $color_1;
 	}
 }
@@ -123,9 +124,6 @@ $background-color_3: #FFD5A2;
 		height: 2px;
 		background-color: $background-color_2;
 		margin: 8px 0;
-    @media (max-width: 699px) {
-    display: none;
-    }
 	}
 }
 
@@ -140,7 +138,7 @@ $background-color_3: #FFD5A2;
 }
 
 .menu-mobile {
-  @media (min-width: 699.5px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -154,14 +152,13 @@ $background-color_3: #FFD5A2;
 }
 
 .logo_burger {
-	position: relative;
-	bottom: 90px;
+	margin-top: -30px;
 	filter: drop-shadow(0px 0px 26.0937px rgba(255, 92, 0, 0.6));
 }
 
 .story_burger {
 	&::before {
-		animation: floating-logo 6s ease-in-out 1s infinite;
+		animation: floating-logo 2s ease-in-out 1s infinite;
 	}
 	&::after {
 		animation: flower-rotation 20s linear infinite;
@@ -179,15 +176,19 @@ $background-color_3: #FFD5A2;
 		animation: flower-rotation 20s linear infinite;
 	}
 	&::after {
-		animation: floating-logo 6s ease-in-out 1s infinite;
+		animation: floating-logo 2s ease-in-out 1s infinite;
 	}
 }
 
 .studio_burger {
 	&::before {
-		animation: floating-logo 6s ease-in-out 1s infinite;
+		animation: floating-logo 2s ease-in-out 1s infinite;
 	}
 	&::after {
 		animation: flower-rotation 20s linear infinite;
 	}
+}
+
+.studio_koukaki {
+	margin-bottom: -30px;
 }

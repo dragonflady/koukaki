@@ -41,3 +41,33 @@
         bottom: 25em;
     }
 }
+
+// Media queries
+
+// Pour les écrans ≤ 768px
+@media (max-width: 768px) {
+    .oscar .nomination-text {
+        font-size: 1.5rem;
+
+        img {
+            background-color: aqua;
+        }
+
+        &::before, &::after {
+            content: none;
+        }
+    }
+}
+
+// Pour les écrans entre 768px et 992px
+@media (min-width: 768px) and (max-width: 992px) {
+    .oscar .nomination-text {
+        padding: 60px 40px;
+        width: 90%;
+        font-size: 1.75rem;
+
+        & img {
+            margin-left: -20px;
+        }
+    }
+}
