@@ -40,23 +40,30 @@
 }
 
 @media (max-width: 768px) {
+  .oscar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .oscar .nomination-text {
     font-size: 1.5rem;
+    width: 460px;
   }
-  .oscar .nomination-text img {
-    background-color: aqua;
-  }
-  .oscar .nomination-text::before, .oscar .nomination-text::after {
+  .oscar::before, .oscar::after {
     content: none;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  .oscar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .oscar .nomination-text {
-    padding: 60px 40px;
-    width: 90%;
+    width: 70%;
     font-size: 1.75rem;
   }
-  .oscar .nomination-text img {
+  .oscar img {
     margin-left: -20px;
   }
 }
@@ -194,6 +201,24 @@
   width: 100%;
 }
 
+#characters {
+  width: 100%;
+}
+#characters div {
+  max-width: 1440px;
+}
+#characters div h3 {
+  width: 700px;
+  padding: 1.5em 2em;
+}
+
+@media (max-width: 768px) {
+  .main-character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .story #place {
   background-image: url("../../assets/images/Studio_Koukaki-image_place.png"); /* Nouvelle image de fond */
 }
@@ -329,7 +354,7 @@
   z-index: 2;
 }
 
-@media (min-width: 699.5px) {
+@media (min-width: 768px) {
   .menu-mobile {
     display: none;
   }
