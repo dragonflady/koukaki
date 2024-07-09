@@ -23,3 +23,32 @@
 .anim-section {
     animation: fadeInStory 1s;
 }
+
+
+// Media queries
+
+// Pour les écrans ≤ 768px
+@media (max-width: 768px) {
+    .story {
+        h2, h3 {
+            font-size: 2rem;
+        }
+
+        #place .big_cloud, .little_cloud {
+            display: none;  
+        }
+    } 
+}
+
+// Pour les écrans entre 768px et 992px
+@media (min-width: 768px) and (max-width: 992px) {
+    .story {
+        h2 {
+            font-size: 3rem;
+        }
+
+        #place .big_cloud, .little_cloud {
+            display: none;  
+        }  
+    }
+}

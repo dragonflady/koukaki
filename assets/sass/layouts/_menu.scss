@@ -44,7 +44,7 @@ $background-color_3: #FFD5A2;
 		.story_burger::before {
 			content: url('../images/purple_cat.png');
 			position: absolute;
-			left: -20em;
+			left: -24em;
 			top: -6em;
 		}
 	
@@ -52,49 +52,49 @@ $background-color_3: #FFD5A2;
 			content: url('../images/Sunflower.png');
 			position: absolute;
 			right: -25em;
-			bottom: 2em;
+			bottom: 1em;
 		}
 
 		.personnages_burger::before {
 			content: url('../images/orchid.png');
 			position: absolute;
-			left: -40em;
-			bottom: 10em;
+			left: -47em;
+			bottom: 8em;
 		}
 
 		.personnages_burger::after {
 			content: url('../images/random_flower_burger.png');
 			position: absolute;
-			right: -38em;
-			bottom: 2em;
+			right: -45em;
+			bottom: -1em;
 		}
 
 		.lieu_burger::before {
 			content: url('../images/Flower.png');
 			position: absolute;
 			left: -28em;
-			bottom: 1em;
+			bottom: 0em;
 		}
 
 		.lieu_burger::after {
 			content: url('../images/grey_cat.png');
 			position: absolute;
-			right: -28em;
-			bottom: -2em;
+			right: -30em;
+			bottom: -5em;
 		}
 
 		.studio_burger::before {
 			content: url('../images/orange_cat.png');
 			position: absolute;
-			left: -28em;
-			bottom: -7em;
+			left: -26em;
+			bottom: -8em;
 		}
 
 		.studio_burger::after {
 			content: url('../images/Hibiscus.png');
 			position: absolute;
-			right: -55em;
-			bottom: -38em;
+			right: -61em;
+			bottom: -39em;
 		}
 	}
 
@@ -137,19 +137,7 @@ $background-color_3: #FFD5A2;
 	z-index: 2;
 }
 
-.menu-mobile {
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
 // Menu elements style
-
-.menu_animations {
-  @media (max-width: 1192px) {
-    display: none;
-  }
-}
 
 .logo_burger {
 	margin-top: -30px;
@@ -192,3 +180,24 @@ $background-color_3: #FFD5A2;
 .studio_koukaki {
 	margin-bottom: -30px;
 }
+
+
+// Media queries 
+
+// Pour les écrans ≤ 768px
+@media (max-width: 768px) {
+    .main-navigation ul {
+		display: flex;
+	}
+}
+
+// Media queries combinées pour les écrans ≤ 992px
+@media (max-width: 992px) {
+	.nav_burger ul .story_burger, .personnages_burger, .lieu_burger, .studio_burger {
+		&::before, &::after {
+			display: none;
+		}
+	}
+}
+
+    

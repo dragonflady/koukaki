@@ -42,6 +42,7 @@
     }
 }
 
+
 // Media queries
 
 // Pour les écrans ≤ 768px
@@ -53,11 +54,11 @@
 
         .nomination-text {
             font-size: 1.5rem;
-            width: 460px;
+            width: 450px;
         }
 
         &::before, &::after {
-            content: none;
+            display: none;
         }
     }
 }
@@ -74,12 +75,11 @@
             width: 70%;
             font-size: 1.75rem;
         }
-    
-        & img {
-            margin-left: -20px;
+
+        &::before, &::after {
+            display: none;
         }
     }
-
 }
     
 
