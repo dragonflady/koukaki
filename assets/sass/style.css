@@ -217,10 +217,6 @@
   .main-character h3 {
     font-size: 2rem;
   }
-  .main-character div {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .story #place {
   background-image: url("../../assets/images/Studio_Koukaki-image_place.png"); /* Nouvelle image de fond */
@@ -258,6 +254,10 @@
     display: none;
   }
 }
+.main-navigation {
+  height: 80px;
+}
+
 .nav_burger {
   height: 100%;
   max-width: 1440px;
@@ -407,9 +407,20 @@
   margin-bottom: -30px;
 }
 
+@media (min-width: 700px) {
+  .main-navigation ul .site-title-mask {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .main-navigation ul {
     display: flex;
+  }
+  .main-navigation ul .site-title {
+    display: none;
+  }
+  .nav_burger a {
+    font-size: 30px;
   }
 }
 @media (max-width: 992px) {
@@ -432,4 +443,7 @@
   #studio h2::before, #studio h2::after {
     display: none;
   }
+}
+.page {
+  height: 100% !important;
 }/*# sourceMappingURL=style.css.map */
