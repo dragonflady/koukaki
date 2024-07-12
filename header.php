@@ -40,7 +40,7 @@
                 </span>
             </a>
             <div id="menu_burger" class="nav_burger">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="title_burger"><?php bloginfo( 'name' ); ?></a>
                 <a id="closeBtn" href="#" class="close">×</a>
                 <ul class="burger">
                     <!-- Logo -->

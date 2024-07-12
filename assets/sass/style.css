@@ -269,6 +269,10 @@
   padding-top: 60px;
   overflow: hidden;
 }
+.nav_burger .title_burger {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+}
 .nav_burger a {
   text-decoration: none;
   font-size: 38px;
