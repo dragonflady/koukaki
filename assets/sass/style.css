@@ -354,7 +354,6 @@
   top: 0;
   width: 100%;
   text-align: center;
-  padding-top: 80px;
   animation: down 1s;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
